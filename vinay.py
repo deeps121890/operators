@@ -10,3 +10,21 @@ Input (stdin)
 Output (stdout)
 Binoy's house is located at (6.0,9.5)
 '''
+# Function to calculate the midpoint of a line segment
+def midpoint(x1, y1, x2, y2):
+    mid_x = (x1 + x2) / 2
+    mid_y = (y1 + y2) / 2
+    return mid_x, mid_y
+
+# Input reading
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+
+# Calculate midpoint
+mid_x, mid_y = midpoint(x1, y1, x2, y2)
+
+# Print the result formatted to 1 decimal place
+print(f"Binoy's house is located at ({mid_x:.1f},{mid_y:.1f})")
+
