@@ -26,3 +26,18 @@ Sample Input 3
 Sample Output 3
 525.0
 '''
+# Function to calculate simple interest
+def calculate_simple_interest(principal, rate, time):
+    return (principal * rate * time) / 100
+
+# Input reading
+principal = float(input())
+rate = float(input())
+time = float(input())
+
+# Calculate simple interest
+simple_interest = calculate_simple_interest(principal, rate, time)
+
+# Print the result
+print(simple_interest)
+
