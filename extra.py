@@ -10,7 +10,6 @@ Fourth line of the input contain an integer that corresponds to the numbers of l
 Fifth line of the input contains an integer that corresponds to the numbers of penalty runs.
 Output format:
 Output should display an integer that returns the total runs that the extras together contribute to team’s total.
-'''
 Sample input and output 1:
 4
 7
@@ -24,3 +23,19 @@ Sample input and output 2:
 7
 1
 17
+''''
+# Function to calculate total extras
+def calculate_extras(no_balls, wides, byes, leg_byes, penalty_runs):
+    total_extras = (no_balls + wides + byes + leg_byes + (5 * penalty_runs))
+    return total_extras
+
+# Input reading
+no_balls = int(input())
+wides = int(input())
+byes = int(input())
+leg_byes = int(input())
+penalty_runs = int(input())
+
+# Calculate and print the total extras
+total_extras = calculate_extras(no_balls, wides, byes, leg_byes, penalty_runs)
+print(total_extras)
