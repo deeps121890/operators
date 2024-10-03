@@ -6,7 +6,6 @@ First line of the input is an integer “X” that specifies the salary of the s
 Second line is an integer “Y” that specifies the salary of the junior players in rupees.
 Output format:
 Output should display a flood that gives the total contribution of money in rupees from the cricket team. The float value should be displayed correct to 2 decimal places.
-'''
 Sample input and output 1:
 45000
 40000
@@ -15,3 +14,25 @@ Sample input and output 2:
 78000
 60000
 354000.00
+'''
+# Function to calculate total contribution
+def calculate_contribution():
+    # Input the salary of senior and junior players
+    X = int(input())  # Salary of senior players
+    Y = int(input())  # Salary of junior players
+
+    # Calculate contributions
+    senior_players_count = 6
+    junior_players_count = 5
+
+    senior_contribution = (X * 0.5) * senior_players_count  # 50% contribution from senior players
+    junior_contribution = (Y * 0.4) * junior_players_count  # 40% contribution from junior players
+
+    # Total contribution
+    total_contribution = senior_contribution + junior_contribution
+
+    # Output the total contribution formatted to 2 decimal places
+    print(f"{total_contribution:.2f}")
+
+# Call the function
+calculate_contribution()
