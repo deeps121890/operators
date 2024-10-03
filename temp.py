@@ -21,3 +21,14 @@ Sample Input 3
 Sample Output 3
 212.0
 '''
+# Function to convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    fahrenheit = (celsius * 9 / 5) + 32
+    return fahrenheit
+
+# Input reading
+celsius = int(input())
+
+# Convert and print the result
+fahrenheit = celsius_to_fahrenheit(celsius)
+print(fahrenheit)
